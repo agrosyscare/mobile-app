@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Agro Syscare</string>
+    <string name="label_title_app">Inicio de sesión</string>
+    <string name="label_email">Correo electrónico</string>
+    <string name="label_password">Contraseña</string>
+    <string name="btn_login">Ingresar</string>
+
+    <string name="press_back_again">Presione una vez más para salir</string>
+    <string name="error_login_response">Se obtuvo una respuesta inesperada del servidor</string>
+    <string name="error_invalid_credentials">Las credenciales son incorrectas</string>
+    <string name="error_empty_credentials">Debe ingresar un nombre de usuario y una contraseña</string>
+    <string name="welcome_message">Bienvenido!</string>
+    <string name="error_reading">Lectura no disponible, intente nuevamente</string>
+    <string name="default_notification_channel_id">default_channel</string>
+</resources>
