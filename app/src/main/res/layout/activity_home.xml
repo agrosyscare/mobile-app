@@ -24,32 +24,21 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Título Placeholder" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="100dp"
-            android:text="Contenido Placeholder" />
-
         <Button
             android:id="@+id/btnViewGreenhouses"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Ir a Invernaderos" />
+            android:text="Ir a Invernaderos"
+            app:backgroundTint="#4CAF50" />
 
         <Button
             android:id="@+id/btnLogout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Cerrar sesión" />
+            android:text="Cerrar sesión"
+            app:backgroundTint="#4CAF50" />
 
     </LinearLayout>
 
