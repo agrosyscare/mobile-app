@@ -6,6 +6,6 @@ data class Condition(
     val id: Int,
     val reading: Int,
     val status: String,
-    @SerializedName("greenhouse_section_id")
-    val greenhouseSectionId: Int
+    @SerializedName("floor_id")
+    val floorId: Int
 )

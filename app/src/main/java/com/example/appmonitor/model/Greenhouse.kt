@@ -4,6 +4,6 @@ import com.google.gson.annotations.SerializedName
 
 data class Greenhouse(
     val id: Int,
-    @SerializedName("name_greenhouse")
+    @SerializedName("name")
     val nameGreenhouse: String
 )

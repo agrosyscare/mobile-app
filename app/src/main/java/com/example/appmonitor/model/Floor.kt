@@ -4,9 +4,9 @@ import com.google.gson.annotations.SerializedName
 
 data class Floor(
     val id: Int,
-    @SerializedName("name_section")
+    @SerializedName("name")
     val nameSection: String,
-    @SerializedName("planting_type")
+    @SerializedName("plant_type")
     val plantingType: String,
     @SerializedName("greenhouse_id")
     val greenhouseId: Int
