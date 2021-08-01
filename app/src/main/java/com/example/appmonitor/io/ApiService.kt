@@ -36,36 +36,36 @@ interface ApiService {
     fun getGreenhouses(@Header("Authorization" ) authHeader: String): Call<ArrayList<Greenhouse>>
 
     // Lista de canchas
-    @GET("greenhouse-sections")
+    @GET("floors")
     fun getFloors(
         @Header("Authorization" ) authHeader: String,
         @Query("greenhouse_id") id: String):
             Call<ArrayList<Floor>>
 
     // Lectura de condiciones ambientales
-    @GET("temperatures")
+    @GET("temperature_readings")
     fun getTemperatures(
         @Header("Authorization") authHeader: String,
-        @Query("greenhouse_section_id") id: String
+        @Query("floor_id") id: String
     ):
             Call<Condition>
 
-    @GET("env-humidity")
+    @GET("humidity_readings")
     fun getEnvHumidities(
         @Header("Authorization") authHeader: String,
-        @Query("greenhouse_section_id") id: String
+        @Query("floor_id") id: String
     ):
             Call<Condition>
 
-    @GET("ret-humidity")
+    @GET("root_moisture_readings")
     fun getRetHumidities(
         @Header("Authorization") authHeader: String,
-        @Query("greenhouse_section_id") id: String
+        @Query("floor_id") id: String
     ):
             Call<Condition>
 
     companion object Factory {
-        private const val BASE_URL = "http://172.18.98.12:8000/api/auth/"
+        private const val BASE_URL = "http://172.18.197.158:3000/api/v1/"
 
         fun create(): ApiService {
             val retrofit = Retrofit.Builder()

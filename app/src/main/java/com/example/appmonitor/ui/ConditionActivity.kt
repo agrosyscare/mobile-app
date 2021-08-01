@@ -28,7 +28,7 @@ class ConditionActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_condition)
 
-        val greenhouseSectionId = intent.getStringExtra("greenhouse_section_id")
+        val greenhouseSectionId = intent.getStringExtra("floor_id")
 
         greenhouseSectionId?.let { readTemperatures(it) }
         greenhouseSectionId?.let { readEnvironmentalHumidities(it) }
@@ -42,7 +42,6 @@ class ConditionActivity : AppCompatActivity() {
         val call = apiService.getTemperatures("Bearer $accessToken", id)
 
         call.enqueue(object: Callback<Condition> {
-            @SuppressLint("StringFormatMatches")
             override fun onResponse(call: Call<Condition>, response: Response<Condition>) {
                 if (response.isSuccessful){
                     tvTemperatureValue.text = response.body()?.reading.toString()+"°C"

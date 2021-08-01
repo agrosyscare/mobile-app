@@ -66,7 +66,7 @@ class FloorActivity : AppCompatActivity(), FloorAdapter.OnItemClickListener {
 
     override fun onItemClick(id: String) {
         val i = Intent(this, ConditionActivity::class.java)
-        i.putExtra("greenhouse_section_id", id)
+        i.putExtra("floor_id", id)
         startActivity(i)
     }
 }
